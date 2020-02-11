@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <!--
+        Personalice la directiva de seguridad de contenido en la etiqueta meta como sea necesario. Agregue "unsafe-inline" a default-src para permitir JavaScript insertado.
+        Para obtener m�s detalles, consulte http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+        <link href="css/bootstrap.css" rel="stylesheet" />
+        <link href="css/font-awesome.min.css" rel="stylesheet" />
+        <title>elpais</title>
+    </head>
+    <body style="background-color:#262525">
+        <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" style="background-color:#000000">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+                        <span class="sr-only">El Pais</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <img alt="Brand" src="/images/logo-menu.jpg" style="width:150px; height:45px; margin-top:-10px;">
+                    </a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse " aria-expanded="false">
+                    <ul class="nav navbar-nav">
+                        <li><a id="btnInicio" href="#">Inicio</a></li>
+                        <li><a id="btnDestacados" href="#">Destacados</a></li>
+                        <li><a id="btnNacionales" href="#">Nacionales</a></li>
+                        <li><a id="btnDeportes" href="#">Deportes</a></li>
+                        <li><a id="btnInternacionales" href="#">Internacionales</a></li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div><!--/.container-fluid -->
+        </nav>
+        <!--Pagina inicio-->
+        <div id="p-inicio" class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <a href="http://www.frigorificoconcepcion.com.py/"><img src="images/BEEFAPP.png" class="img-responsive" /></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div id="noti-destacado" class="thumbnail">
+                        <h4>Destacados</h4>
+                        <img id="i-destacado" src="">
+                        <div class="caption">
+                            <h5 id="t-destacado"></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <div id="noti-nacionales" class="thumbnail">
+                        <h4>Nacionales</h4>
+                        <img id="i-nacional" src="">
+                        <div class="caption">
+                            <h5 id="t-nacional"></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div id="noti-deportes" class="thumbnail">
+                        <h4>Deportes</h4>
+                        <img id="i-deportes" src="">
+                        <div class="caption">
+                            <h5 id="t-deportes"></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--fin inicio-->
+        <div id="p-destacados" class="container-fluid hide"></div>
+        <div id="p-nacionales" class="container-fluid hide"></div>
+        <div id="p-deportes" class="container-fluid hide"></div>
+        <div id="p-internacionales" class="container-fluid hide"></div>
+        <div id="render-noti" class="container-fluid hide" style="background-color:#ffffff"></div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+        <script type="text/javascript" src="scripts/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="scripts/jquery.mobile-1.4.5.js"></script>
+        <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+        <script type="text/javascript" src="scripts/index.js"></script>
+    </body>
+</html>
